@@ -1,0 +1,58 @@
+# Nombre descriptivo del flujo de trabajo
+name: Flujo de trabajo de clientes
+
+# Eventos que disparan este flujo de trabajo
+on:
+  # Se ejecuta cuando alguien hace push al repositorio
+  push:
+    branches: [ main ]
+  # Se ejecuta cuando alguien crea una pull request
+  pull_request:
+    branches: [ main ]
+  # Permite ejecutar manualmente desde la interfaz de GitHub
+  workflow_dispatch:
+
+# Trabajos que ejecutará este flujo de trabajo
+jobs:
+  # Nombre del trabajo
+  test:
+    # Sistema operativo donde se ejecutará
+    runs-on: ubuntu-latest
+    
+    # Pasos a ejecutar en secuencia
+    steps:
+    # Paso 1: Obtener una copia del código del repositorio
+    - name: Obtener código del repositorio
+      uses: actions/checkout@v3
+    
+    # Paso 2: Verificar la estructura de archivos (útil para depuración)
+    - name: Listar archivos del repositorio
+      run: |
+        echo "Listando archivos en el directorio actual:"
+        ls -la  
+    
+    # Paso 3: Configurar Python en el ambiente de ejecución
+    - name: Configurar Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'  # Versión de Python a usar
+    
+    # Paso 4: Ejecutar la función de consulta de clientes (primera prueba)
+    - name: Probar consulta de clientes
+      run: |
+        python Act-2.py consultar
+    
+    # Paso 5: Crear un cliente de prueba
+    - name: Crear cliente de prueba
+      run: |
+        python Act-2.py crear --id 1 --nombre "Roberto" --email "roberto@yahoo.com" --telefono "5551234567"
+    
+    # Paso 6: Eliminar cliente 
+    - name: Eliminar cliente
+      run: |
+        python Act-2.py eliminar --id 1
+
+    # Paso 7: Modificar cliente 
+    - name: Modificar cliente
+      run: |
+        python Act-2.py actualizar --id 1 --nombre "Juan Pedro"
