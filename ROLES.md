@@ -6,6 +6,8 @@
   - Desarrollo de nuevas funcionalidades
   - Resolución de bugs
   - Implementación de mejoras
+  - Encargados de pruebas unitarias
+  - Documentación de arquitectura
 
 ## Equipo de Operaciones
 - **Miembros**: @JLA811, @ProfCharles89
@@ -13,20 +15,23 @@
   - Mantenimiento de infraestructura
   - Monitoreo de sistemas
   - Gestión de despliegues
-
-
-
+  - Encargados de IAC
+  - Optiización de recursos en la nube
 
 ## Equipo de QA
 - **Miembros**: @AlfonsoGGonzalez
 - **Responsabilidades**:
-  - Pruebas y validación
+  - Pruebas manuales y validación
   - Aseguramiento de calidad
   - Automatización de pruebas
+  - Documentación de casos de uso
 
 ## Equipo de Seguridad
-- **Miembros**: @cmadrid86
+- **Miembros**: @AlanSaavedra75
 - **Responsabilidades**:
   - Escaneo de seguridad
   - Auditoría de código
-  - Implementación de políticas de seguridad
+  - Auditoría de roles y politicas en la nube
+  - Revisión de Pull Requests
+  - Implementación y generación de políticas de seguridad
+  - Entrenamiento de personal
