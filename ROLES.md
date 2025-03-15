@@ -8,7 +8,7 @@
   - Implementación de mejoras
 
 ## Equipo de Operaciones
-- **Miembros**: @usuario3, @usuario4
+- **Miembros**: @JLA811, @ProfCharles89
 - **Responsabilidades**:
   - Mantenimiento de infraestructura
   - Monitoreo de sistemas
@@ -18,14 +18,14 @@
 
 
 ## Equipo de QA
-- **Miembros**: @usuario5
+- **Miembros**: @AlfonsoGGonzalez
 - **Responsabilidades**:
   - Pruebas y validación
   - Aseguramiento de calidad
   - Automatización de pruebas
 
 ## Equipo de Seguridad
-- **Miembros**: @usuario6
+- **Miembros**: @cmadrid86
 - **Responsabilidades**:
   - Escaneo de seguridad
   - Auditoría de código
