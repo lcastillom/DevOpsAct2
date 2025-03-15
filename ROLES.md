@@ -1,7 +1,7 @@
 # Roles y Responsabilidades - Metodología DevOps
 
 ## Equipo de Desarrollo
-- **Miembros**: @usuario1, @usuario2
+- **Miembros**: @lcastillom, @cmadrid86
 - **Responsabilidades**:
   - Desarrollo de nuevas funcionalidades
   - Resolución de bugs
